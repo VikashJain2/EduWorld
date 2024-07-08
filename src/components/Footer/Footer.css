@@ -1,0 +1,148 @@
+footer{
+    background: #000;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin-top: 11rem;
+    
+    /* place-items: center; */
+    padding: 100px 49px;
+    color: #eae5e5;
+    gap: 57px;
+}
+.footer-first{
+    display: grid;
+    gap: 14px;
+}
+.footer-first .footer-logo{
+    color: #ffffffad;
+    font-size: 1.4rem;
+}
+.footer-logo span{
+    color: #d67437;
+}
+.footer-first p{
+    font-size: 0.8rem;
+    color: rgb(104, 114, 123);
+}
+
+.footer-info span{
+    color: #ffffffad;
+}
+.footer-info h4:hover{
+    color: rgb(7, 125, 86);
+    cursor: pointer;
+}
+.footer-info{
+    font-size: 0.8rem;
+    color: rgb(104, 114, 123);
+}
+
+.footer-second{
+    display: grid;
+    gap: 14px;
+}
+.footer-second .online-platform{
+    font-size: 1.4rem;
+    color: #ffffffad;
+}
+.footer-second a{
+    color: rgb(104, 114, 123);
+}
+.footer-second a:hover{
+    color: rgb(7, 125, 86);
+}
+.footer-third{
+    display: grid;
+    gap: 14px;
+}
+.footer-third a{
+    color: rgb(104, 114, 123);
+}
+.footer-third a:hover{
+    color: rgb(7, 125, 86);
+}
+.footer-third .links{
+    font-size: 1.4rem;
+    color: #ffffffad;
+}
+.footer-forth{
+    display: grid;
+    gap: 21px;
+}
+.footer-container{
+    padding: 15px;
+}
+
+.footer-container .copy-right{
+    text-align: center;
+}
+.footer-forth p{
+    color: rgb(104, 114, 123);
+}
+.footer-forth .newsletter{
+    font-size: 1.4rem;
+    color: #ffffffad;
+}
+.form{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    /* height: 50%; */
+    /* gap: 10px; */
+    width: fit-content;
+    align-items: center;
+}
+.form input{
+    padding: 12px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+
+.form button{
+    margin: 10px;
+    padding: 11px 30px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: #ffffffcc;
+    font-weight: 700;
+    background-color: rgb(5, 165, 112);
+}
+.form button:hover i{
+    transition: all 0.3s ease-in-out;
+    transform: translateX(10px);
+}
+.social-icons{
+    display: flex;
+    gap: 30px;
+    font-size: 1.2rem;
+    
+    transition: all 0.3s ease;
+}
+.social-icons i:hover{
+    color: #ffffffcc;
+    cursor: pointer;
+font-weight: 700;
+}
+
+.copy-right{
+    font-size: 0.8rem;
+    color: rgb(104, 114, 123);
+}
+.copy-right span{
+    color: rgb(5, 165, 112);
+}
+@media screen and (max-width:1024px){
+    .footer{
+        grid-template-columns: repeat(2,auto);
+    }
+}
+
+@media screen and (max-width:660px){
+    .footer{
+        grid-template-columns: 1fr;
+    }
+}

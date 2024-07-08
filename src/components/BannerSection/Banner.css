@@ -1,0 +1,112 @@
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 12rem;
+}
+.banner-left{
+    width: 100%;
+    display: grid;
+    place-content: center;
+    margin-left: 50px;
+    align-items: center;
+    gap: 1rem;
+}
+.banner-left h2{
+    font-size: 2.5rem;
+}
+.banner-button{
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    border-radius: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: none;
+    height: 39px;
+    cursor: pointer;
+    /* transition: 0.2s ease-in-out; */
+    color: white;
+    background-color: rgb(5, 165, 112);
+    width: 18%;
+    transition: all 0.2s ease-in-out;
+}
+
+.banner-button:hover{
+    background-color: rgb(5, 65, 45);
+}
+.banner-left h2 span{
+    color: #d67437
+}
+
+.banner-right{
+    object-fit: cover;
+}
+.banner-right img{
+    width: 70%;
+    height: auto;
+    margin-left: 111px;
+}
+
+@media screen and (max-width:850px){
+    .banner{
+        grid-template-columns: 1fr;
+       gap: 2rem;
+       margin-right: 50px;
+    }
+    .banner-left{
+        width: 95%;
+        overflow: hidden;
+        font-size: 1.5rem;
+    }
+    .banner-left p{
+        font-size: 1.2rem;
+    }
+    .banner-button{
+        width: fit-content;
+        font-size: 1rem;
+    }
+    .banner-right img{
+        /* width: 50%; */
+    }
+}
+
+@media screen and (max-width:500px){
+    .banner{
+        /* margin: 46px; */
+        /* margin-left: -18px; */
+        /* margin-inline: auto; */
+        /* padding: 15px 29px 15px 15px; */
+    }
+    .banner-right img{
+        display: none;
+    }
+    .banner-button{
+        font-size: 1.2rem;
+    }
+    .banner-right img{
+        width: 60%;
+    }
+    .banner-left p{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:485px){
+    .banner{
+        margin-top: 12rem;
+        margin-left: 0px;
+    }
+    .banner-left{
+        width: 90%;
+        font-size: 1.2rem;
+    }
+    .banner-left h2{
+        font-size: 2rem;
+    }
+    .banner-button{
+        font-size: 1rem;
+    }
+    .banner-left p{
+        font-size: 1.2rem;
+    }
+    
+}
